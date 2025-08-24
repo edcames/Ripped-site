@@ -14,7 +14,6 @@
   <meta property="og:description" content="Born from victory against the SEC. Stronger than Bitty. Join the movement."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://ripped-site.vercel.app"/>
-  <!-- Usa tu header 3:1 -->
   <meta property="og:image" content="assets/header.png"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:site" content="@Ripped_OG"/>
@@ -24,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"/>
   <style>
-    /* pequeños refinamientos extra */
+    /* pequeños refinamientos extra que complementan styles.css */
     .contract-box{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
     .contract-code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:#fff;border:1px solid rgba(24,24,27,.12);padding:10px 12px;border-radius:12px}
     .socials-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
@@ -33,9 +32,11 @@
 <body>
   <!-- HERO -->
   <header class="hero">
+    <!-- Asegúrate de tener assets/header.png (1500x500) -->
     <img class="hero-img" src="assets/header.png" alt="Ripped header"/>
     <div class="hero-overlay"></div>
     <div class="hero-inner">
+      <!-- Asegúrate de tener assets/avatar.png (1:1) -->
       <img class="avatar" src="assets/avatar.png" alt="Ripped avatar"/>
       <div class="hero-text">
         <h1>Ripped</h1>
@@ -50,21 +51,21 @@
     </div>
   </header>
 
+  <!-- MARQUEE -->
   <div class="marquee">
     The only XRP mascot here to stay • Stronger than Bitty • Victorious against the SEC • Community First
   </div>
 
-  <!-- STORY (resumen corto) -->
+  <!-- STORY -->
   <section class="section container">
     <div class="grid-2">
       <div>
         <h2>Born from Victory</h2>
-        <p>For almost five years, Ripple fought against the most feared monster in the crypto industry: the SEC. While other projects surrendered, XRP resisted every blow and remained standing. On August 22, the battle ended and Ripple came out victorious. The SEC withdrew its appeal, Ripple dropped its counterclaim, and the crypto world celebrated the first major victory against the toughest regulator of all. Although Ripple was left with a 125-million-dollar fine, the symbolic victory is undeniable: XRP was not defeated, it became stronger. Ripped was born from that victory, a muscular and indestructible warrior that represents XRP as the token that conquered the biggest regulatory monster.</p>
+        <p>Ripped represents XRP’s resilience after beating the toughest regulator in the game. Built by and for the community — retro style, modern memes.</p>
       </div>
       <div>
-        <h2>Strongest community in crypto</h2>
-        <p>The XRP community has always been one of the strongest, most united forces in the entire crypto space. ⚡ While others doubted, the XRP army stood firm through years of challenges, setbacks, and a battle against one of the toughest regulators in the world — the SEC. That fight tested resilience, but it also forged an identity: XRP holders don’t give up, they grow stronger.A community this powerful deserves more than just recognition — it deserves a true symbol. That is why Ripped was born. 💪Ripped is not just another meme. It’s the embodiment of XRP’s strength, perseverance, and unstoppable energy. While other memes come and go, Ripped stands tall as a mascot that represents victory, determination, and the humor that keeps this community alive. For years, the XRP community has been underestimated. Now it finally has a champion that reflects its spirit. Ripped is here to stay — stronger than Bitty, victorious against the SEC, and built to lead the next wave of memes into the future.
-Join the movement. Be part of the legend. 🔥</p>
+        <h2>Meme Rivalry</h2>
+        <p>While clones fight for attention, Ripped stands alone: clearer brand, stronger story, and a community-first approach. Bitty falls — Ripped rises.</p>
       </div>
     </div>
   </section>
@@ -110,6 +111,56 @@ Join the movement. Be part of the legend. 🔥</p>
     </div>
   </section>
 
+  <!-- NEWS -->
+  <section id="news" class="section container">
+    <h2>Ripped News</h2>
+    <p class="sub">Latest updates from the community and the battlefield.</p>
+
+    <div class="news-list">
+      <!-- Duplica/edita estas tarjetas -->
+      <article class="news-card">
+        <h3>Ripped launches official website</h3>
+        <p>Our landing is live with contract, socials, and the meme mission.</p>
+        <div class="meta">
+          <span>Today</span>
+          <a href="https://ripped-site.vercel.app" target="_blank" rel="noopener">Read more →</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <h3>Telegram community opens</h3>
+        <p>Join the movement and help Ripped graduate on Pump.fun.</p>
+        <div class="meta">
+          <span>Today</span>
+          <a href="https://t.me/RippedOfficial" target="_blank" rel="noopener">Join →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ACCEPTANCE / SENTIMENT -->
+  <section id="acceptance" class="section section-alt">
+    <div class="container">
+      <h2>Community Acceptance</h2>
+      <p class="sub">Move the needle as traction grows.</p>
+
+      <div class="acceptance-wrap">
+        <div class="controls">
+          <label for="acceptInput">Set acceptance (0–100):</label>
+          <input id="acceptInput" type="number" min="0" max="100" value="42" />
+          <input id="acceptRange" type="range" min="0" max="100" value="42" />
+        </div>
+
+        <div class="progress">
+          <div id="acceptBar" class="progress-bar" style="width:42%"></div>
+          <div id="acceptLabel" class="progress-label">42%</div>
+        </div>
+
+        <p class="hint">Tip: update this number daily based on your metrics (tweets, holders, volume).</p>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -122,6 +173,7 @@ Join the movement. Be part of the legend. 🔥</p>
   </footer>
 
   <script>
+    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Copy contract
@@ -137,6 +189,25 @@ Join the movement. Be part of the legend. 🔥</p>
           alert('Copy failed. Contract:\\n' + txt);
         }
       });
+    })();
+
+    // Acceptance bar logic
+    (function(){
+      const input = document.getElementById('acceptInput');
+      const range = document.getElementById('acceptRange');
+      const bar   = document.getElementById('acceptBar');
+      const label = document.getElementById('acceptLabel');
+
+      function clamp(n){ n = parseInt(n||0,10); if(isNaN(n)) n=0; return Math.max(0, Math.min(100, n)); }
+      function render(n){
+        bar.style.width = n + '%';
+        label.textContent = n + '%';
+      }
+
+      input.addEventListener('input', () => { const v = clamp(input.value); range.value = v; render(v); });
+      range.addEventListener('input', () => { const v = clamp(range.value); input.value = v; render(v); });
+
+      render(clamp(input.value));
     })();
   </script>
 </body>
