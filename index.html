@@ -171,6 +171,17 @@ Join the movement. Be part of the legend. 🔥.</p>
     </div>
   </section>
 
+  <!-- YOUTUBE -->
+<section id="youtube" class="section container">
+  <h2>Ripped on YouTube</h2>
+  <p class="sub">Weekly animated drops. Watch, share, and spread the meme.</p>
+
+  <div id="ytGrid" class="yt-grid">
+    <!-- Cards autogeneradas por JS -->
+  </div>
+</section>
+
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -220,5 +231,49 @@ Join the movement. Be part of the legend. 🔥.</p>
       render(clamp(input.value));
     })();
   </script>
+  <script>
+  // ====== YouTube videos (agrega aquí tus videos) ======
+  // title: título visible
+  // id: el ID de YouTube (lo que va después de v= en la URL)
+  // date: fecha corta opcional
+  // desc: descripción corta opcional
+  const VIDEOS = [
+    {
+      title: "Ripped enters the party of meme legends",
+      id: "QSr43rZtYbc",
+      date: "Aug 27, 2025",
+      desc: "Ripped opens the door and steps into a world of pure fun."
+    },
+    {
+      title: "Ripped — trailer (weekly animations)",
+      id: "VIDEO_ID_2",
+      date: "Coming weekly",
+      desc: "The only XRP meme mascot here to stay."
+    }
+  ];
+
+  // ====== Render de cards ======
+  const ytGrid = document.getElementById("ytGrid");
+  ytGrid.innerHTML = VIDEOS.map(v => {
+    const thumb = `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`;
+    const link = `https://www.youtube.com/watch?v=${v.id}`;
+    return `
+      <article class="yt-card">
+        <a class="yt-thumb" href="${link}" target="_blank" rel="noopener" aria-label="Watch ${v.title}">
+          <img src="${thumb}" alt="${v.title}" loading="lazy">
+          <span class="yt-badge">Watch</span>
+        </a>
+        <div class="yt-meta">
+          <h3 class="yt-title">${v.title}</h3>
+          <p class="yt-desc">${v.desc || ""}</p>
+          <div class="yt-row">
+            <span class="yt-date">${v.date || ""}</span>
+            <a class="btn btn-ghost" href="${link}" target="_blank" rel="noopener">Open on YouTube</a>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join("");
+</script>
 </body>
 </html>
