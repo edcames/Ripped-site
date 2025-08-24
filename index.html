@@ -1,126 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ripped — The XRP Mascot</title>
-  <meta name="description" content="Ripped: the unstoppable XRP mascot. Born from victory. Built for memes."/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Ripped — The Only XRP Meme Mascot Here to Stay</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Ripped — the unstoppable XRP meme mascot. Stronger than Bitty, victorious against the SEC. Join the movement."/>
+  <meta name="keywords" content="Ripped,XRP,Ripple,memecoin,crypto,Bitty,SEC,Pumpfun"/>
+
+  <!-- Social (OG/Twitter) -->
+  <meta property="og:title" content="Ripped — The Only XRP Meme Mascot Here to Stay"/>
+  <meta property="og:description" content="Born from victory against the SEC. Stronger than Bitty. Join the movement."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://ripped-site.vercel.app"/>
+  <!-- Usa tu header 3:1 -->
+  <meta property="og:image" content="assets/header.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@Ripped_OG"/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* pequeños refinamientos extra */
+    .contract-box{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .contract-code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:#fff;border:1px solid rgba(24,24,27,.12);padding:10px 12px;border-radius:12px}
+    .socials-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  </style>
 </head>
 <body>
   <!-- HERO -->
   <header class="hero">
-    <!-- Replace this header image with your 3:1 header (min width 600px) -->
-    <img class="hero-img" src="assets/Header.png" alt="Ripped header"/>
+    <img class="hero-img" src="assets/header.png" alt="Ripped header"/>
     <div class="hero-overlay"></div>
     <div class="hero-inner">
-      <!-- Replace this avatar image with your 1:1 (square) -->
-      <img class="avatar" src="assets/Avatar.png" alt="Ripped avatar"/>  
+      <img class="avatar" src="assets/avatar.png" alt="Ripped avatar"/>
       <div class="hero-text">
         <h1>Ripped</h1>
-        <p>The unstoppable XRP mascot. Born from victory. Built for memes.</p>
+        <p>The unstoppable XRP meme mascot — stronger than Bitty, victorious against the SEC.</p>
         <div class="cta-row">
-          <a class="btn btn-solid" href="#buy">Buy / Trade</a>
-          <a class="btn btn-ghost" href="#story">Read the Story</a>
+          <a class="btn btn-solid" href="https://pump.fun/coin/5ZVgwfMTajBKkfWBRsFYnuGRGgRyEbeKn7Gnw4Vspump" target="_blank" rel="noopener">Buy on Pump.fun</a>
+          <a class="btn btn-ghost" href="#token">View Contract</a>
+          <a class="btn btn-ghost" href="https://twitter.com/Ripped_OG" target="_blank" rel="noopener">Follow on X</a>
+          <a class="btn btn-ghost" href="https://t.me/RippedOfficial" target="_blank" rel="noopener">Join Telegram</a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- MARQUEE -->
   <div class="marquee">
-    Victory over the SEC • Victory over Bitty • Community First • No Rugs • Retro Vibes Only
+    The only XRP mascot here to stay • Stronger than Bitty • Victorious against the SEC • Community First
   </div>
 
-  <!-- STORY -->
-  <section id="story" class="section container">
+  <!-- STORY (resumen corto) -->
+  <section class="section container">
     <div class="grid-2">
       <div>
-        <h2>Ripped vs. SEC: The Regulatory Titan</h2>
-        <p>
-          For almost five years, Ripple fought against the most feared monster in the crypto industry: the SEC. While other projects surrendered,
-          XRP resisted every blow and remained standing. On August 22, the battle ended and Ripple came out victorious. The SEC withdrew its appeal,
-          Ripple dropped its counterclaim, and the crypto world celebrated the first major victory against the toughest regulator of all. Although
-          Ripple was left with a 125-million-dollar fine, the symbolic victory is undeniable: XRP was not defeated — it became stronger. Ripped was
-          born from that victory: a muscular, indestructible warrior that represents XRP as the token that conquered the biggest regulatory monster.
-        </p>
+        <h2>Born from Victory</h2>
+        <p>Ripped represents XRP’s resilience after beating the toughest regulator in the game. Built by and for the community — retro style, modern memes.</p>
       </div>
       <div>
-        <h2>Ripped vs. Bitty: The Meme Rivalry</h2>
-        <p>
-          In the memecoin ecosystem, Bitty emerged as the supposed “OG mascot of Bitcoin.” For months, different versions and clones of Bitty tried to
-          dominate the space with confusion and hype. But when Ripped appeared, everything changed. Bitty represented chaos and the fraud of clones,
-          while Ripped represented true strength backed by history and legal triumph. In the narrative, Ripped defeated Bitty, proving that XRP can not
-          only overcome the SEC, but also outshine any meme that pretends to take its place.
-        </p>
+        <h2>Meme Rivalry</h2>
+        <p>While clones fight for attention, Ripped stands alone: clearer brand, stronger story, and a community-first approach. Bitty falls — Ripped rises.</p>
       </div>
     </div>
   </section>
 
   <!-- TOKEN -->
-  <section id="buy" class="section section-alt">
-    <div class="container token">
+  <section id="token" class="section section-alt">
+    <div class="container">
       <h2>Token</h2>
       <div class="grid-2 token-grid">
         <div>
           <div class="card">
-            <p class="label">Contract (placeholder)</p>
-            <code class="code">5ZVgwfMTajBKkfWBRsFYnuGRGgRyEbeKn7Gnw4Vspump</code>
+            <p class="label">Contract</p>
+            <div class="contract-box">
+              <code class="contract-code" id="contractText">5ZVgwfMTajBKkfWBRsFYnuGRGgRyEbeKn7Gnw4Vspump</code>
+              <button class="btn btn-solid" id="copyBtn">Copy</button>
+            </div>
           </div>
-          <ul class="bullets">
-            <li>Fair launch, community-driven.</li>
-            <li>No team tax, no hidden functions.</li>
-            <li>Retro art, modern memes.</li>
-          </ul>
-          <div class="cta-row">
-            <a class="btn btn-solid" href="#">Dexscreener</a>
-            <a class="btn btn-solid" href="#">Buy on DEX</a>
-            <a class="btn btn-ghost" href="#">Chart</a>
-          </div>
-        </div>
-        <div class="values card">
-          <h3>Core Values</h3>
-          <div class="values-grid">
-            <div class="pill">Community First</div>
-            <div class="pill">No Rugs</div>
-            <div class="pill">Transparent Liquidity</div>
-            <div class="pill">Meme Culture</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ROADMAP -->
-  <section class="section container">
-    <h2>Roadmap</h2>
-    <div class="grid-3 roadmap">
-      <div class="card">
-        <h3>Phase 1 — Awakening</h3>
-        <ul class="bullets">
-          <li>Launch site & socials</li>
-          <li>Mint & fair distribution</li>
-          <li>Meme pack + header art</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Phase 2 — Momentum</h3>
-        <ul class="bullets">
-          <li>Listing on major trackers</li>
-          <li>Community contests</li>
-          <li>Partnership memes</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Phase 3 — Dominance</h3>
-        <ul class="bullets">
-          <li>Merch drop</li>
-          <li>Charity initiative</li>
-          <li>IRL meetups</li>
-        </ul>
+          <ul class="bullets">
+            <li>Fair, community-driven meme project</li>
+            <li>Retro comic aesthetics</li>
+            <li>Transparent links and communication</li>
+          </ul>
+
+          <div class="cta-row" style="margin-top:12px">
+            <a class="btn btn-solid" href="https://pump.fun/coin/5ZVgwfMTajBKkfWBRsFYnuGRGgRyEbeKn7Gnw4Vspump" target="_blank" rel="noopener">Buy on Pump.fun</a>
+            <a class="btn btn-solid" href="https://dexscreener.com/solana/5ZVgwfMTajBKkfWBRsFYnuGRGgRyEbeKn7Gnw4Vspump" target="_blank" rel="noopener">View on Dexscreener</a>
+            <a class="btn btn-ghost" href="https://twitter.com/Ripped_OG" target="_blank" rel="noopener">Follow on X</a>
+            <a class="btn btn-ghost" href="https://t.me/RippedOfficial" target="_blank" rel="noopener">Join Telegram</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Stay Connected</h3>
+          <div class="socials-row">
+            <a class="btn btn-solid" href="https://twitter.com/Ripped_OG" target="_blank" rel="noopener">Twitter/X</a>
+            <a class="btn btn-solid" href="https://t.me/RippedOfficial" target="_blank" rel="noopener">Telegram</a>
+            <a class="btn btn-ghost" href="https://ripped-site.vercel.app" target="_blank" rel="noopener">Website</a>
+          </div>
+          <p style="margin-top:12px">You are still early. Share memes, invite friends, and help Ripped graduate.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -128,17 +112,31 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Ripped. Community project. No affiliation with Ripple Labs Inc.</p>
+      <p>© <span id="year"></span> Ripped. Community project — not affiliated with Ripple Labs Inc.</p>
       <div class="socials">
-        <a class="btn btn-solid" href="#">Twitter/X</a>
-        <a class="btn btn-ghost" href="#">Telegram</a>
-        <a class="btn btn-ghost" href="#">Gitbook</a>
+        <a class="btn btn-solid" href="https://twitter.com/Ripped_OG" target="_blank" rel="noopener">X</a>
+        <a class="btn btn-ghost" href="https://t.me/RippedOfficial" target="_blank" rel="noopener">Telegram</a>
       </div>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Copy contract
+    (function () {
+      const btn = document.getElementById('copyBtn');
+      const txt = document.getElementById('contractText').textContent.trim();
+      btn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(txt);
+          btn.textContent = 'Copied!';
+          setTimeout(()=> btn.textContent='Copy', 1400);
+        } catch {
+          alert('Copy failed. Contract:\\n' + txt);
+        }
+      });
+    })();
   </script>
 </body>
 </html>
